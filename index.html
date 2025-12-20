@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>World Builder Workshop</title>
+  <meta name="description" content="Hands-on world-building workshops blending traditional craft with AI-assisted workflows for artists, animators, game designers, and makers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Clean, modern type similar vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- Top Nav -->
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">World Builder Workshop</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#samples">Videos</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="#samples">Watch</a>
+        <a class="btn btn--primary" href="#apply">Join a Workshop</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#samples">Videos</a>
+      <a href="#sessions">Sessions</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="#apply">Join a Workshop</a>
+    </div>
+  </header>
+
+  <!-- Hero / Parallax -->
+  <main id="top">
+    <section class="hero" id="hero">
+      <!-- Parallax layers -->
+      <div class="hero__bg">
+        <div class="layer layer--glow" data-depth="0.08"></div>
+        <div class="layer layer--noise" data-depth="0.12"></div>
+
+        <!-- Replace hero.png with your uploaded image file -->
+        <div class="layer layer--poster" data-depth="0.18" role="img" aria-label="World Building Workshop poster"></div>
+
+        <div class="layer layer--orbs" data-depth="0.24">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </div>
+
+      <div class="wrap hero__content">
+        <div class="kicker">Hands-on • Creative • AI-assisted (not AI-replaced)</div>
+
+        <h1>
+          Build immersive worlds with
+          <span class="grad">craft + modern pipelines</span>
+        </h1>
+
+        <p class="subhead">
+          A practical workshop for artists, animators, game designers, and makers—moving from ideation to
+          cinematic composition, 3D layout, and even 3D printing prep, with AI used for iteration and refinement.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--big" href="#apply">Join the next session</a>
+          <a class="btn btn--ghost btn--big" href="#samples">See video samples</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num">5+</div>
+            <div class="stat__label">Workflow modules</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">AI+</div>
+            <div class="stat__label">Support tool, not replacement</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">1</div>
+            <div class="stat__label">World, built end-to-end</div>
+          </div>
+        </div>
+
+        <div class="scrollhint">
+          <span class="scrollhint__dot"></span>
+          Scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section__grid">
+          <div>
+            <h2>What is the World Builder Workshop?</h2>
+            <p class="lead">
+              A hands-on creative session exploring how artists, animators, game designers, and makers can build
+              immersive worlds using a mix of traditional craft and modern AI-assisted workflows.
+            </p>
+
+            <p class="muted">
+              We move through practical world-building pipelines—character/creature ideation, environment sketching,
+              cinematic composition, 3D layout for game engines, and prepping forms for 3D printing. AI is used for
+              rapid prototyping, structural refinements, and style exploration—while your authorship stays at the center.
+            </p>
+
+            <div class="pillrow">
+              <span class="pill">Hand-drawn ideation</span>
+              <span class="pill">World layout + story</span>
+              <span class="pill">3D modeling</span>
+              <span class="pill">Animation workflows</span>
+              <span class="pill">3D printing prep</span>
+              <span class="pill">AI for iteration</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <h3>What you’ll leave with</h3>
+            <ul class="checklist">
+              <li>✅ A repeatable world-building workflow you can use for games, animation, XR, comics, tabletop, or physical models</li>
+              <li>✅ A “world bible” starter kit: moodboard, style constraints, key assets, and pipeline notes</li>
+              <li>✅ A set of prompts + node-style process thinking you can reuse across projects</li>
+              <li>✅ Video snippets you can share or build into a portfolio</li>
+            </ul>
+
+            <div class="mini-cta">
+              <a class="btn btn--primary" href="#apply">Join the next workshop</a>
+              <a class="btn btn--ghost" href="#sessions">See formats</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline -->
+    <section class="section section--soft" id="pipeline">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>The pipeline (hands-on, practical)</h2>
+          <p class="muted">
+            Structured like a real production flow: explore → refine → assemble → present.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">01</span>
+              <h3>Ideation + Constraints</h3>
+            </div>
+            <p>World theme, rules, references, “what’s unique,” and what must stay consistent.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">02</span>
+              <h3>Characters / Creatures</h3>
+            </div>
+            <p>Shape language, silhouettes, variations, quick iterations, and design selection.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">03</span>
+              <h3>Environments + Composition</h3>
+            </div>
+            <p>Environment sketching, cinematic framing, lighting ideas, and “readability” passes.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">04</span>
+              <h3>3D Layout / Engine Prep</h3>
+            </div>
+            <p>Blocking, scale, camera paths, asset organization, and export considerations.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">05</span>
+              <h3>3D Printing Considerations</h3>
+            </div>
+            <p>Watertight forms, supports, scale, tolerances, and surface detail priorities.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__top">
+              <span class="badge">AI</span>
+              <h3>AI as support (never replacement)</h3>
+            </div>
+            <p>Used for iteration speed, structural refinement, and style exploration—your design instincts drive decisions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Samples -->
+    <section class="section" id="samples">
+      <div class="wrap">
+        <div class="section__head section__head--split">
+          <div>
+            <h2>Video samples</h2>
+            <p class="muted">Drop in your YouTube/Vimeo links—or use local MP4 files. This section is built to scale.</p>
+          </div>
+          <div class="chiprow">
+            <span class="chip">Process</span>
+            <span class="chip">Before/After</span>
+            <span class="chip">Tool Demos</span>
+            <span class="chip">Mini Case Studies</span>
+          </div>
+        </div>
+
+        <div class="videoGrid">
+          <!-- YouTube/Vimeo Embed Example -->
+          <article class="videoCard">
+            <div class="videoCard__media">
+              <iframe
+                src="https://www.youtube.com/embed/_bPzgWN8Meg?rel=0"
+                title="World Builder Workshop Sample"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="videoCard__body">
+              <h3>AI + World-Building Workflow (sample)</h3>
+              <p class="muted">A walkthrough of the workflow mindset: iterate fast, then commit to authored decisions.</p>
+            </div>
+          </article>
+
+          <!-- Local MP4 Example (swap src to your file) -->
+          <article class="videoCard">
+            <div class="videoCard__media">
+              <video controls preload="metadata" poster="">
+                <source src="./media/sample-01.mp4" type="video/mp4" />
+                Sorry, your browser can’t play this video.
+              </video>
+            </div>
+            <div class="videoCard__body">
+              <h3>Creature ideation → refinement</h3>
+              <p class="muted">Silhouette passes, selection, and structural refinement with AI as scaffolding.</p>
+            </div>
+          </article>
+
+          <article class="videoCard">
+            <div class="videoCard__media">
+              <video controls preload="metadata" poster="">
+                <source src="./media/sample-02.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="videoCard__body">
+              <h3>Environment sketch → cinematic frame</h3>
+              <p class="muted">Composition, depth, lighting notes, then scene blocking for 3D layout.</p>
+            </div>
+          </article>
+
+          <article class="videoCard">
+            <div class="videoCard__media">
+              <video controls preload="metadata" poster="">
+                <source src="./media/sample-03.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="videoCard__body">
+              <h3>3D printing prep (quick pass)</h3>
+              <p class="muted">Watertight checks, support planning, and detail decisions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section section--soft" id="sessions">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Who it’s for</h2>
+          <p class="muted">A perfect meetup for anyone building worlds—digital, physical, or hybrid.</p>
+        </div>
+
+        <div class="audience">
+          <div class="audienceCard">
+            <h3>Animators</h3>
+            <p>Build characters + scenes with a pipeline mindset, then translate to shots and motion.</p>
+          </div>
+          <div class="audienceCard">
+            <h3>Game Designers</h3>
+            <p>World logic, level layout, camera readability, and asset organization for engines.</p>
+          </div>
+          <div class="audienceCard">
+            <h3>Makers / 3D Printing</h3>
+            <p>Turn designs into printable forms with practical constraints and clean geometry.</p>
+          </div>
+          <div class="audienceCard">
+            <h3>Illustrators / Comics</h3>
+            <p>Develop a consistent world bible—style rules, props, locations, and recurring motifs.</p>
+          </div>
+          <div class="audienceCard">
+            <h3>XR / Immersive</h3>
+            <p>Spatial thinking, guided exploration, and environment readability for presence.</p>
+          </div>
+          <div class="audienceCard">
+            <h3>Curious Beginners</h3>
+            <p>Learn how modern pipelines fit together without needing to be “AI native.”</p>
+          </div>
+        </div>
+
+        <div class="formats">
+          <div class="card glass">
+            <h3>Session formats</h3>
+            <div class="formatRow">
+              <div class="format">
+                <div class="format__title">Workshop (2–3 hrs)</div>
+                <div class="format__desc">Live walkthrough + exercises + share-out.</div>
+              </div>
+              <div class="format">
+                <div class="format__title">Deep Dive (Half-day)</div>
+                <div class="format__desc">Focus on one pipeline: creature, environment, or engine layout.</div>
+              </div>
+              <div class="format">
+                <div class="format__title">Studio Session</div>
+                <div class="format__desc">Tailored to team needs: stakeholders, artists, or mixed groups.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <h3>What we emphasize</h3>
+            <ul class="checklist">
+              <li>✅ Craft first: your taste and decisions lead</li>
+              <li>✅ Clear process you can repeat</li>
+              <li>✅ “Show your work” thinking (great for portfolios)</li>
+              <li>✅ AI used for iteration + refinement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>What people say</h2>
+          <p class="muted">Swap these with real quotes as you collect them.</p>
+        </div>
+
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>“This made the whole AI + production conversation feel grounded. I finally understood what the pipeline actually looks like.”</p>
+            <footer>— Workshop Attendee</footer>
+          </blockquote>
+
+          <blockquote class="quote">
+            <p>“The constraint-first approach was the breakthrough. I stopped chasing random outputs and started building a coherent world.”</p>
+            <footer>— Game Artist</footer>
+          </blockquote>
+
+          <blockquote class="quote">
+            <p>“Practical and inspiring. The ‘AI as scaffolding’ framing is exactly what I needed.”</p>
+            <footer>— Animator</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply / CTA -->
+    <section class="section section--cta" id="apply">
+      <div class="wrap cta">
+        <div class="cta__left">
+          <h2>Join the next World Builder Workshop</h2>
+          <p class="muted">
+            Want this as a public meetup, a studio session, or a focused deep dive?
+            Drop your email and what you’re building—game, animation, tabletop, XR, or physical model.
+          </p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--big" href="mailto:hello@yourdomain.com?subject=World%20Builder%20Workshop%20-%20Interested">
+              Email to join
+            </a>
+            <a class="btn btn--ghost btn--big" href="#samples">Watch samples</a>
+          </div>
+        </div>
+
+        <form class="cta__form" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" autocomplete="name">
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@email.com" autocomplete="email" required>
+          </label>
+          <label>
+            What are you building?
+            <textarea rows="4" placeholder="Game world, short film, creature series, tabletop setting, XR scene..."></textarea>
+          </label>
+          <button class="btn btn--primary btn--big" id="fakeSubmit">Request info</button>
+          <p class="tiny muted">This demo form doesn’t submit anywhere yet (hook it to Mailchimp / ConvertKit / your backend).</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Quick answers—easy to expand.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Do I need to be “good at AI” to attend?</summary>
+            <p>No. The workshop is designed to build confidence and literacy. We treat AI like a support tool inside a broader creative workflow.</p>
+          </details>
+          <details>
+            <summary>What tools do you use?</summary>
+            <p>It varies by session. The focus is on transferable workflow thinking: prompt design, iteration strategy, selection criteria, and production structure.</p>
+          </details>
+          <details>
+            <summary>Is this for games only?</summary>
+            <p>No—games, animation, tabletop, comics, XR, and physical models all fit. “World building” is the common thread.</p>
+          </details>
+          <details>
+            <summary>Can you run this for a studio team?</summary>
+            <p>Yes. We can tailor it for stakeholders vs artists, and focus on one pipeline (creature, environment, engine layout, etc.).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__dot"></span>
+            <span class="brand__text">World Builder Workshop</span>
+          </div>
+          <p class="tiny muted">
+            Built for worldbuilders: craft-first, pipeline-minded, AI-assisted.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#samples">Videos</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#apply">Join</a>
+        </div>
+
+        <div class="footer__meta tiny muted">
+          © <span id="year"></span> World Builder Workshop • All rights reserved
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
