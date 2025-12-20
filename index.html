@@ -414,14 +414,14 @@
                     </p>
                     <div class="cta__actions">
                         <a class="btn btn--primary btn--big"
-                            href="mailto:hello@yourdomain.com?subject=World%20Builder%20Workshop%20-%20Interested">
+                            href="mailto:jmicalle@gmail.com?subject=World%20Builder%20Workshop%20-%20Interested">
                             Email to join
                         </a>
                         <a class="btn btn--ghost btn--big" href="#samples">Watch samples</a>
                     </div>
                 </div>
 
-                <form class="cta__form" onsubmit="return false;">
+                <form class="cta__form" name="workshop-interest" method="POST" data-netlify="true">
                     <label>
                         Name
                         <input type="text" placeholder="Your name" autocomplete="name">
@@ -435,7 +435,7 @@
                         <textarea rows="4"
                             placeholder="Game world, short film, creature series, tabletop setting, XR scene..."></textarea>
                     </label>
-                    <button class="btn btn--primary btn--big" id="fakeSubmit">Request info</button>
+                    <button class="btn btn--primary btn--big" type="submit">Request info</button>
                     <p class="tiny muted">This demo form doesn’t submit anywhere yet (hook it to Mailchimp / ConvertKit
                         / your backend).</p>
                 </form>

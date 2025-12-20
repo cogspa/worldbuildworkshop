@@ -82,13 +82,4 @@ window.addEventListener("scroll", () => {
 
 updateParallax();
 
-// --- Demo form button ---
-const fakeSubmit = document.getElementById("fakeSubmit");
-fakeSubmit?.addEventListener("click", () => {
-  fakeSubmit.textContent = "Requested ✓";
-  fakeSubmit.disabled = true;
-  setTimeout(() => {
-    fakeSubmit.textContent = "Request info";
-    fakeSubmit.disabled = false;
-  }, 2400);
-});
+
