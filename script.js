@@ -80,6 +80,28 @@ window.addEventListener("scroll", () => {
   if (!raf) raf = requestAnimationFrame(updateParallax);
 }, { passive: true });
 
-updateParallax();
+// --- Form Submission (Netlify AJAX) ---
+const workshopForm = document.getElementById("workshopForm");
+const formSuccess = document.getElementById("formSuccess");
 
+if (workshopForm) {
+  workshopForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
+    const formData = new FormData(workshopForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        workshopForm.style.display = "none";
+        formSuccess.style.display = "flex";
+      })
+      .catch((error) => {
+        console.error("Form submission error:", error);
+        alert("There was an issue submitting the form. Please try again.");
+      });
+  });
+}

@@ -419,24 +419,35 @@
                     </div>
                 </div>
 
-                <form class="cta__form" name="workshop-interest" method="POST" data-netlify="true">
-                    <label>
-                        Name
-                        <input type="text" name="full-name" placeholder="Your name" autocomplete="name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
-                    </label>
-                    <label>
-                        What are you building?
-                        <textarea name="project-details" rows="4"
-                            placeholder="Game world, short film, creature series, tabletop setting, XR scene..."
-                            required></textarea>
-                    </label>
-                    <button class="btn btn--primary btn--big" type="submit">Request info</button>
-                    <p class="tiny muted">Form submissions are handled via Netlify.</p>
-                </form>
+                <div class="cta__form-container">
+                    <form class="cta__form" id="workshopForm" name="workshop-interest" method="POST"
+                        data-netlify="true">
+                        <label>
+                            Name
+                            <input type="text" name="full-name" placeholder="Your name" autocomplete="name" required>
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+                        </label>
+                        <label>
+                            What are you building?
+                            <textarea name="project-details" rows="4"
+                                placeholder="Game world, short film, creature series, tabletop setting, XR scene..."
+                                required></textarea>
+                        </label>
+                        <button class="btn btn--primary btn--big" type="submit">Request info</button>
+                        <p class="tiny muted">Form submissions are handled via Netlify.</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="form-success__icon">✨</div>
+                        <h3>Thank you!</h3>
+                        <p class="muted">Your inquiry has been received. We'll reach out shortly with details about the
+                            next workshop.</p>
+                        <button class="btn btn--ghost" onclick="location.reload()">Send another</button>
+                    </div>
+                </div>
             </div>
         </section>
 
