@@ -107,9 +107,13 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(40px, 5vw, 64px);
-  line-height: 1.02;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(48px, 8vw, 92px);
+  line-height: 0.9;
   margin-top: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -0.045em;
 }
 
 .grad {
@@ -174,16 +178,23 @@ h1 {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: 750;
+  transition: opacity .15s ease;
 }
 
-.brand__dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--gradA), var(--gradB));
-  box-shadow: 0 0 22px rgba(179, 140, 255, 0.35);
+.brand:hover {
+  opacity: 0.8;
+}
+
+.brand__logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.footer__logo {
+  height: 40px;
 }
 
 .nav {
@@ -643,12 +654,56 @@ h1 {
   align-items: start;
 }
 
+.cta--stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.cta__header {
+  max-width: 800px;
+}
+
+.cta__header h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 12px;
+}
+
+.cta__actions--bottom {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .cta__form {
   border-radius: var(--radius2);
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(0, 0, 0, 0.25);
   box-shadow: var(--shadow);
-  padding: 18px;
+  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+  /* Fill the container */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta--stacked .cta__form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: auto;
+}
+
+.cta__form button[type="submit"] {
+  align-self: center;
+  margin-top: 24px;
+  min-width: 240px;
 }
 
 .cta__form label {
@@ -785,6 +840,54 @@ details p {
   color: rgba(255, 255, 255, 0.92);
 }
 
+/* Event Grid */
+.event-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.event-info__item {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.event-info__item strong {
+  color: var(--gradA);
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.event-subsections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.event-subsection h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--gradB);
+}
+
+.event-subsection .checklist li {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
 /* Responsive */
 @media (max-width: 980px) {
   .section__grid {
@@ -796,6 +899,14 @@ details p {
   }
 
   .videoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-subsections {
     grid-template-columns: 1fr;
   }
 

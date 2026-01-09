@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>World Builder Workshop</title>
+    <title>WORLD MAKER WORKSHOP</title>
     <meta name="description"
         content="Hands-on world-building workshops blending traditional craft with AI-assisted workflows for artists, animators, game designers, and makers." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Clean, modern type similar vibe -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Outfit:wght@300;400;600;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -21,8 +22,7 @@
     <header class="topbar" id="topbar">
         <div class="wrap topbar__inner">
             <a class="brand" href="#top">
-                <span class="brand__dot"></span>
-                <span class="brand__text">World Builder Workshop</span>
+                <img src="images/WMWlogo.png" alt="World Maker Workshop Logo" class="brand__logo">
             </a>
 
             <nav class="nav">
@@ -77,8 +77,8 @@
                 <div class="kicker">Live and Online • Creative • AI-assisted (not AI-replaced)</div>
 
                 <h1>
-                    Build immersive worlds with
-                    <span class="grad">craft + modern pipelines</span>
+                    WORLD MAKER
+                    <span class="grad">WORKSHOP</span>
                 </h1>
 
                 <p class="subhead">
@@ -88,7 +88,11 @@
                 </p>
 
                 <div class="hero__actions">
-                    <a class="btn btn--primary btn--big" href="#apply">Join the next session</a>
+                    <div style="width: 100%; margin-bottom: 12px;">
+                        <span class="pill" style="border-color: var(--gradA); color: var(--gradA);">New workshop coming
+                            up Jan 25th (Hit Next Session for more info)</span>
+                    </div>
+                    <a class="btn btn--primary btn--big" href="#next-session">Join the next session</a>
                     <a class="btn btn--ghost btn--big" href="#samples">See video samples</a>
                 </div>
 
@@ -119,7 +123,7 @@
             <div class="wrap">
                 <div class="section__grid">
                     <div>
-                        <h2>What is the World Builder Workshop?</h2>
+                        <h2>What is the WORLD MAKER WORKSHOP?</h2>
                         <p class="lead">
                             Live and Online training in association with <strong><a href="https://www.pvnet.com"
                                     target="_blank" rel="noopener"
@@ -372,6 +376,78 @@
             </div>
         </section>
 
+        <!-- Next Session -->
+        <section class="section section--soft" id="next-session">
+            <div class="wrap">
+                <div class="section__head">
+                    <div class="kicker">Next Workshop: Jan 25, 2026</div>
+                    <h2 style="margin-top: 10px;">AI + Unreal Engine Workshop</h2>
+                    <p class="lead" style="margin-top: 5px; color: var(--gradA);">Integrating AI into Real-Time World
+                        Building</p>
+                    <p class="muted">Discover how AI tools can accelerate workflows inside Unreal Engine.</p>
+                </div>
+
+                <div class="event-grid">
+                    <div class="event-details card glass">
+                        <div class="event-info">
+                            <div class="event-info__item">
+                                <strong>When:</strong> Sunday, January 25, 2026 • 1:30–3:30 PM PT
+                            </div>
+                            <div class="event-info__item">
+                                <strong>Where:</strong> PVNET – Promenade PV Mall (550 Deep Valley Dr., Ste #229,
+                                Rolling Hills Estates, CA 90274)
+                            </div>
+                            <div class="event-info__item">
+                                <strong>Host:</strong> Joseph Micallef
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 24px;">
+                            <a class="btn btn--primary" href="#apply">Register for this event</a>
+                        </div>
+                    </div>
+
+                    <div class="event-content">
+                        <h3>What this workshop is</h3>
+                        <p class="muted">An introductory, hands-on session exploring how AI tools can be integrated into
+                            Unreal Engine for real-time world building, games, animation, and interactive experiences.
+                        </p>
+                        <p class="muted">This workshop is designed as a gentle on-ramp to Unreal Engine, while also
+                            surveying the rapidly evolving landscape of AI-assisted 3D creation. We’ll look at how AI
+                            can support early ideation, asset generation, layout, and iteration—without replacing core
+                            design decisions or creative authorship.</p>
+
+                        <div class="event-subsections">
+                            <div class="event-subsection">
+                                <h4>Part of the discussion:</h4>
+                                <ul class="checklist">
+                                    <li>✅ Unreal Engine fundamentals for artists and designers</li>
+                                    <li>✅ Real-time world building concepts and workflows</li>
+                                    <li>✅ A survey of current AI 3D model generators</li>
+                                    <li>✅ Vizom, an AI-driven design tool</li>
+                                </ul>
+                            </div>
+                            <div class="event-subsection">
+                                <h4>Expect a blend of:</h4>
+                                <ul class="checklist">
+                                    <li>✅ Intro-level Unreal Engine concepts</li>
+                                    <li>✅ World layout and real-time visualization</li>
+                                    <li>✅ AI-assisted 3D asset exploration</li>
+                                    <li>✅ Practical discussion of where AI helps</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="event-footer card glass" style="margin-top: 24px;">
+                            <p><strong>This workshop is ideal for:</strong> artists, animators, game designers,
+                                students, and technologists who are curious about bringing AI-generated content into
+                                Unreal Engine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Testimonials -->
         <section class="section" id="testimonials">
             <div class="wrap">
@@ -403,40 +479,33 @@
 
         <!-- Apply / CTA -->
         <section class="section section--cta" id="apply">
-            <div class="wrap cta">
-                <div class="cta__left">
-                    <h2>Join the next World Builder Workshop</h2>
+            <div class="wrap cta cta--stacked">
+                <div class="cta__header">
+                    <h2>Register to Join</h2>
                     <p class="muted">
-                        Want this as a public meetup, a studio session, or a focused deep dive?
-                        Drop your email and what you’re building—game, animation, tabletop, XR, or physical model.
+                        Join us for an intensive hands-on session exploring AI-assisted workflows in Unreal Engine.
+                        <strong>Sunday, January 25, 2026 • 1:30–3:30 PM PT</strong> at PVNET (Palos Verdes Promenade).
                     </p>
-                    <div class="cta__actions">
-                        <a class="btn btn--primary btn--big"
-                            href="mailto:jmicalle@gmail.com?subject=World%20Builder%20Workshop%20-%20Interested">
-                            Email to join
-                        </a>
-                        <a class="btn btn--ghost btn--big" href="#samples">Watch samples</a>
-                    </div>
                 </div>
 
                 <div class="cta__form-container">
-                    <form class="cta__form" id="workshopForm" name="workshop-interest" method="POST"
+                    <form class="cta__form" id="workshopForm" name="workshop-registration-jan25" method="POST"
                         data-netlify="true">
                         <label>
-                            Name
-                            <input type="text" name="full-name" placeholder="Your name" autocomplete="name" required>
+                            Your Name
+                            <input type="text" name="full-name" placeholder="John Doe" autocomplete="name" required>
                         </label>
                         <label>
-                            Email
+                            Email Address
                             <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
                         </label>
                         <label>
-                            What are you building?
-                            <textarea name="project-details" rows="4"
-                                placeholder="Game world, short film, creature series, tabletop setting, XR scene..."
+                            Registration Details
+                            <textarea name="registration-notes" rows="4"
+                                placeholder="Tell us about your background or what you hope to learn (e.g., game design, animation, curiosity...)"
                                 required></textarea>
                         </label>
-                        <button class="btn btn--primary btn--big" type="submit">Request info</button>
+                        <button class="btn btn--primary btn--big" type="submit">Complete Registration</button>
                         <p class="tiny muted">Form submissions are handled via Netlify.</p>
                     </form>
 
@@ -447,6 +516,14 @@
                             next workshop.</p>
                         <button class="btn btn--ghost" onclick="location.reload()">Send another</button>
                     </div>
+                </div>
+
+                <div class="cta__actions cta__actions--bottom">
+                    <a class="btn btn--primary btn--big"
+                        href="mailto:jmicalle@gmail.com?subject=World%20Maker%20Workshop%20-%20Registration">
+                        Email for more information
+                    </a>
+                    <a class="btn btn--ghost btn--big" href="#next-session">See event details</a>
                 </div>
             </div>
         </section>
@@ -489,8 +566,8 @@
             <div class="wrap footer__inner">
                 <div>
                     <div class="brand brand--footer">
-                        <span class="brand__dot"></span>
-                        <span class="brand__text">World Builder Workshop</span>
+                        <img src="images/WMWlogo.png" alt="World Maker Workshop Logo" class="brand__logo footer__logo">
+                        <span class="brand__text">WORLD MAKER WORKSHOP</span>
                     </div>
                     <p class="tiny muted">
                         Built for worldbuilders: craft-first, pipeline-minded, AI-assisted.
@@ -505,7 +582,7 @@
                 </div>
 
                 <div class="footer__meta tiny muted">
-                    © <span id="year"></span> World Builder Workshop • Created by Joe Micallef • All rights reserved
+                    © <span id="year"></span> WORLD MAKER WORKSHOP • Created by Joe Micallef • All rights reserved
                 </div>
             </div>
         </footer>
